@@ -10,7 +10,13 @@ public class QueueADT
 
 	void enqueue(int value)
 	{
-
+		if(front==-1)
+		{
+			front++;
+		}
+		if(rear<10){
+			rear++;}
+		queue[rear] = value;
 	}
 
 	int dequeue()
